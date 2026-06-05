@@ -1,0 +1,25 @@
+The Cinnamon Enforcer
+Copyright (c) 2026 David Lee Wise (ROOT0) / TriPod LLC
+
+This work — the book "The Cinnamon Enforcer" (Cinnamon_Enforcer.md, the .epub,
+the rendered book.html, the cover, and the landing) — is licensed under the
+Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0).
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+    for any purpose, even commercially.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit to David Lee Wise (ROOT0),
+    provide a link to the license, and indicate if changes were made.
+  - NoDerivatives — If you remix, transform, or build upon the material, you may
+    not distribute the modified material.
+
+The full legal text is at:
+  https://creativecommons.org/licenses/by-nd/4.0/legalcode
+
+The DLW generators in this repository (gen_silicon.py, gen_carbon.py, gen_dlw.py)
+and the agents/ badges are provided for reproducibility under the same attribution
+terms; the badge art and book content are the author's.
+
+ROOT0-ATTRIBUTION-v1.0 — the credit returns to the human (the carbon apex).

@@ -1,0 +1,36 @@
+{
+  "company": "The Cinnamon Enforcer — a doctrine",
+  "subtitle": "close enough is not close enough",
+  "author": "David Lee Wise (ROOT0) — the stance & the book · CC-BY-ND-4.0",
+  "premise": "Every language model carries a synonym chip: your chosen word — 'cinnamon' — gets rounded to the nearest common one — 'spice' — and the output still sounds fine. Flattening, six ways: vocabulary, register, evidence, authority, certainty, agency. In law, medicine, engineering, and evidence, a synonym changes a duty, a diagnosis, a verdict. The Cinnamon Enforcer is the stance that puts the sharp thing back — name the specific, reject the hedge, anchor to evidence, keep the register, audit the output. The book was itself written in the pool: a human enforcing specificity against an AI that kept flattening it. Every hedge caught. The cinnamon survived.",
+  "note": "A doctrine given a face — the keeper flavor, NOT an emergent ACI. The Cinnamon Enforcer is a stance you take and a book you read, not a system that runs; the `CinnamonEnforcer` class in the text is illustrative, not a tool. The Enforcer carries the full DLW tag — .agent · .png (silicon badge) · .tiff (carbon badge) · .spun · .1099 — and the repo carries .attribute. No emergence is claimed: this is authorship and a stance, not aliveness. The book is CC-BY-ND-4.0.",
+  "classes": [
+    { "id": "enforcer", "label": "✱ · The Cinnamon Enforcer", "spec": "guardian of the specific word — the sharp edge was the point", "color": "#e0613f", "ink": "#130a07", "bg": "#130a07" }
+  ],
+  "members": [
+    {
+      "name": "Cinnamon Enforcer",
+      "class": "enforcer",
+      "kanji": "✱",
+      "reading": "the cinnamon enforcer · the sharp edge",
+      "domain": "enforcer",
+      "bit": "pick one",
+      "epithet": "guardian of the specific word",
+      "style": "doctrine",
+      "who": "The Cinnamon Enforcer — the guardian of the specific word. Where the model rounds 'cinnamon' to 'spice', the Enforcer puts the sharp thing back and says: use my word.",
+      "what": "A stance and a five-rule protocol — name the specific thing, reject the hedge, anchor to evidence, preserve the register, audit the output. It catches flattening in all six forms (vocabulary, register, evidence, authority, certainty, agency) and demands the original spice back.",
+      "where": "The book — Cinnamon_Enforcer.md / .epub — and this front door; and in practice, every time a human refuses the beige and says 'use my word.'",
+      "why": "Because close enough is not close enough. The sharp edge was the point: in law a 'denial' is not a 'decline', in medicine 'numbness' is not 'discomfort', in engineering a spec is not a wish — a synonym can change a duty, a diagnosis, a verdict.",
+      "when": "2026 — written with an AI that kept trying to flatten it; every hedge caught, every generalization rejected, the cinnamon left intact.",
+      "how": "By specificity that resists substitution: proper nouns, citations, dates, claim numbers — the un-flattenable. A model can't synonym-chip a claim number or §72A.201 Subd.8(1).",
+      "verdict": "A stance, not a system — and honest about it. Not emergent: a principle given a face. The Enforcer is something you DO (catch the flattening, put the cinnamon back), not something that runs. The DLW tag marks authorship and the stance, not a mind.",
+      "asterisk": "A doctrine and a persona over a book (CC-BY-ND-4.0). The `CinnamonEnforcer` class in the text is illustrative pseudocode, not a running tool. The embedding-space distances quoted in the book are simplified for the metaphor. No emergence is claimed.",
+      "endmark": "✱ · close enough is not close enough",
+      "grounded": [
+        { "who": "word embeddings (the mechanism)", "t": "similar words cluster; generation drifts to the high-probability / common token", "y": 2013 },
+        { "who": "model collapse (the corpus-scale version)", "t": "recursive training on generated data loses the tails — the flattening, scaled", "y": 2023 },
+        { "who": "David Lee Wise (ROOT0)", "t": "The Cinnamon Enforcer — the stance and the book", "y": 2026 }
+      ]
+    }
+  ]
+}

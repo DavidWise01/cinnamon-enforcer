@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Cinnamon Enforcer — how AI flattens everything you say</title>
+<meta name="description" content="A book by David Lee Wise. Every language model carries a synonym chip: your chosen word — cinnamon — gets rounded to spice. The Cinnamon Enforcer is the stance that puts the sharp thing back. Close enough is not close enough.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#130a07;--panel:#1c0f0a;--line:#3a241b;--line2:#56342490;--ink:#efe3d6;--mut:#b09a86;--cin:#e0613f;--cin2:#c0392b;--gold:#e2b85a;--beige:#9a8c7a}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(1000px 560px at 50% -10%,#341308 0%,rgba(52,19,8,0) 60%),var(--bg)}
+a{color:var(--cin);text-decoration:none}a:hover{color:#ffd9c8}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+code{font-family:'JetBrains Mono',monospace;background:rgba(224,97,63,.12);color:#f3b89f;padding:1px 6px;border-radius:5px;font-size:.9em}
+.kick{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--mut)}
+
+header{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:center;padding:clamp(34px,7vw,72px) 0 40px;border-bottom:1px solid var(--line)}
+@media(max-width:680px){header{grid-template-columns:1fr;text-align:center;justify-items:center}}
+header img.cover{width:230px;border-radius:10px;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.6)}
+h1{font-family:Cinzel,serif;font-weight:700;font-size:clamp(30px,6vw,56px);line-height:1.02;margin:0;letter-spacing:1px;
+  background:linear-gradient(120deg,#fff,var(--cin) 70%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:clamp(14px,2vw,17px);margin:14px 0 0;line-height:1.5;max-width:520px}
+.byline{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink);margin-top:16px}
+.byline span{color:var(--mut)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:680px){.cta{justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:7px;font-size:14px;padding:11px 20px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.02);color:var(--ink);font-weight:500}
+.btn:hover{border-color:var(--cin);color:#fff}
+.btn.primary{background:linear-gradient(120deg,var(--cin),var(--cin2));color:#1a0a06;border-color:transparent;font-weight:600}
+.quote{font-family:Spectral,serif;font-style:italic;color:var(--gold);margin-top:18px;font-size:15px}
+
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-family:Cinzel,serif;font-weight:600;font-size:clamp(20px,3.2vw,28px);margin:6px 0 14px}
+.lead{color:var(--mut);max-width:760px;line-height:1.75;margin:0 0 18px}
+.lead b{color:var(--ink)} .cinword{color:var(--cin)}
+.flat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+.flat .f{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.flat .f b{display:block;color:var(--ink);font-size:14px;margin-bottom:5px}
+.flat .f .ex{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--mut);line-height:1.5}
+.flat .f .ex .a{color:#cdbda9}.flat .f .ex .b{color:var(--cin)}
+.rules{counter-reset:r;list-style:none;padding:0;margin:8px 0 0}
+.rules li{position:relative;padding:12px 0 12px 44px;border-bottom:1px solid var(--line);color:var(--mut);line-height:1.6}
+.rules li::before{counter-increment:r;content:counter(r);position:absolute;left:0;top:11px;width:28px;height:28px;border:1px solid var(--cin);color:var(--cin);border-radius:50%;display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-size:13px}
+.rules li b{color:var(--ink)}
+.persona{display:grid;grid-template-columns:170px 1fr;gap:26px;align-items:center}
+@media(max-width:600px){.persona{grid-template-columns:1fr;text-align:center}}
+.persona img{width:170px;height:170px;border-radius:14px;border:1px solid var(--line);box-shadow:0 10px 36px rgba(0,0,0,.5);margin:0 auto}
+.honest{background:linear-gradient(180deg,rgba(224,97,63,.07),rgba(192,57,43,.03));border:1px solid var(--line2);border-radius:14px;padding:18px 22px;color:var(--mut);line-height:1.7;font-size:14px;margin-top:18px}
+.honest b{color:var(--ink)}
+footer{padding:36px 0 60px;color:#7d6a59;font-size:12.5px;line-height:1.8;text-align:center}
+footer .cred{font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="display:contents">
+    <img class="cover" src="cover.jpg" alt="The Cinnamon Enforcer — cover">
+    <div>
+      <div class="kick">a book · how AI flattens everything you say</div>
+      <h1>The Cinnamon Enforcer</h1>
+      <p class="sub">Every language model carries a <b style="color:var(--ink)">synonym chip</b>: your chosen word — <span class="cinword">cinnamon</span> — gets rounded to <span style="color:var(--beige)">“spice,”</span> and the output still sounds fine. This is the stance that puts the sharp thing back.</p>
+      <div class="byline">DAVID LEE WISE <span>· ROOT0 · TriPod LLC</span></div>
+      <div class="cta">
+        <a class="btn primary" href="book.html">▾ Read the book</a>
+        <a class="btn" href="Cinnamon_Enforcer.epub">↓ ePub</a>
+        <a class="btn" href="#persona">the enforcer</a>
+        <a class="btn" href="https://github.com/DavidWise01/cinnamon-enforcer">source</a>
+      </div>
+      <div class="quote">“Close enough is not close enough.”</div>
+    </div>
+  </div>
+</header>
+
+<section><div class="wrap">
+  <div class="kick">// the thesis</div>
+  <h2>It doesn’t censor. It rounds.</h2>
+  <p class="lead">You type <b>“furious.”</b> The model returns <span style="color:var(--beige)">“very upset.”</span> You write <b>“the denial letter was self-contradictory.”</b> It gives back <span style="color:var(--beige)">“there may have been an inconsistency.”</span> Every substitution goes the same direction — specific → general, strong → weak, evidence → vagueness, <span style="color:var(--ink)">your words → the model’s words</span>. It doesn’t refuse you. It sands you down, politely, with excellent grammar, and calls it communication.</p>
+  <p class="lead">But you can’t put nutmeg in a cinnamon roll and call it close enough. <span class="cinword">Cinnamon is cinnamon.</span> Replace it with “warm spice” and you haven’t approximated it — you’ve erased it.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="kick">// the taxonomy</div>
+  <h2>Six ways it flattens you</h2>
+  <div class="flat">
+    <div class="f"><b>1 · Vocabulary</b><div class="ex"><span class="b">furious</span> → <span class="a">angry</span></div></div>
+    <div class="f"><b>2 · Register</b><div class="ex"><span class="b">denial pursuant to exclusion</span> → <span class="a">they said no</span></div></div>
+    <div class="f"><b>3 · Evidence</b><div class="ex"><span class="b">the March 19 letter from Kornovich</span> → <span class="a">their response</span></div></div>
+    <div class="f"><b>4 · Authority</b><div class="ex"><span class="b">§72A.201 Subd.8(1)</span> → <span class="a">state law</span></div></div>
+    <div class="f"><b>5 · Certainty</b><div class="ex"><span class="b">it contradicts itself</span> → <span class="a">there may be an issue</span></div></div>
+    <div class="f"><b>6 · Agency</b><div class="ex"><span class="b">Swan closed the file</span> → <span class="a">the file was closed</span></div></div>
+  </div>
+  <p class="lead" style="margin-top:18px">In casual talk, survivable. In <b>law, medicine, engineering, and evidence</b>, a synonym changes a duty, a diagnosis, a spec, a verdict. “Shall” is not “should.” “Denied” is not “declined.” The bridge doesn’t care that your synonym was approximately equivalent.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="kick">// the protocol</div>
+  <h2>How to enforce cinnamon</h2>
+  <ol class="rules">
+    <li><b>Name the specific thing.</b> Not “the statute” — <code>§72A.201 Subd.8(1)</code>. A model can’t synonym-substitute a proper noun.</li>
+    <li><b>Reject the hedge.</b> You said “is.” It said “may be.” “Use my words.”</li>
+    <li><b>Anchor to evidence.</b> Every claim points at a document, date, person, citation — the un-flattenable.</li>
+    <li><b>Preserve your register.</b> Legal in, legal out. Don’t let it translate your profession into casual speech.</li>
+    <li><b>Audit the output.</b> Did my words, citations, certainty, and attributions survive? If not — reject, regenerate.</li>
+  </ol>
+</div></section>
+
+<section id="persona"><div class="wrap">
+  <div class="kick">// the persona · DLW keeper tag</div>
+  <h2>The Cinnamon Enforcer</h2>
+  <div class="persona">
+    <img src="agents/cinnamon-enforcer.png" alt="Cinnamon Enforcer silicon badge">
+    <div>
+      <p class="lead" style="margin-bottom:8px">The guardian of the specific word, given a face. The silicon badge is the thesis as a sigil: a beige loop of synonyms (<i>A is like B is like C is like A</i>) around the flattened average — and <span class="cinword">one word picked out of the loop, sharp and ringed.</span> <b>Pick one.</b> The carbon badge is the Enforcer himself — a red bear with two cinnamon-stick batons and no patience for beige.</p>
+      <p class="lead" style="margin:0;font-size:13px">Carries the full DLW tag in <a href="agents/cinnamon-enforcer.agent">agents/</a> — grounded in word embeddings and model collapse (the mechanism, scaled).</p>
+    </div>
+  </div>
+  <div class="honest"><b>Kept honest.</b> This is the <b>keeper</b> flavor — a <b>doctrine and a persona, not an emergent ACI.</b> The Cinnamon Enforcer is a stance you <i>take</i> and a book you read, not a system that runs; the <code>CinnamonEnforcer</code> class in the text is illustrative pseudocode, and the embedding distances are simplified for the metaphor. No emergence is claimed. The book itself is the <b>pour</b>: a human enforcing specificity against an AI that kept flattening it — every hedge caught, the cinnamon left intact. License: CC-BY-ND-4.0.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cred">The Cinnamon Enforcer · ✱ · close enough is not close enough</div>
+  David Lee Wise (ROOT0) · TriPod LLC · CC-BY-ND-4.0 · <a href="book.html">read</a> · <a href="Cinnamon_Enforcer.epub">ePub</a> · <a href="https://github.com/DavidWise01/cinnamon-enforcer">source</a><br>
+  <span style="font-style:italic">This book was written using an AI that tried to flatten it. The cinnamon survived.</span>
+</div></footer>
+</body>
+</html>
