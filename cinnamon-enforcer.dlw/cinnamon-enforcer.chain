@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 1309
+slug  : cinnamon-enforcer
+seal  : d3baa488e27ac9d0e10fa0689fde4e6b71afd9453a104a45411084921347abe2
+prev  : d068432aca65ee2df5594b63c34cc8839df215d2e4e3ad0d6a2051990478ae3f
+link  : b96d230e05d9e0db53cee1ba95084978506002deef3dc5e23b06de4d55ad8eb3
+head  : 41f029ee4eaa0042c67040dc5927434f8e8446341839c86b6a09d79c5fbf30da
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
